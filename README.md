@@ -19,18 +19,19 @@ reads and writes data to disk
 blocks are 4096 bits
 
 ## Functions
-`main`
-    `test_image_fd_init`: tests that before any open, image_fd is -1
-    `image_open`: opens a passed file
-    `testt_image_fd_gets_set`: tests that after a open, image_fd is no longer -1
-    `test_image_open`: tests that the image opens and updates image_fd
-        `image_open`: opens a file, sets image_fd to the return of open, returns image_fd so it can be tested
-    `test_image_close`: tests that the image is closed correctly
-        `image_close`: closes the file, returning 0 on success
-    `test_bread`: check the blockmap against a new one to test that read works
-        `bread`: reads from the passed block
-    `test_bwrite`: 
-        `bwrite`:
-        `bread`
+
+- `main`
+- `test_image_fd_init`: tests that before any open, image_fd is -1
+- `image_open`: opens a passed file
+- `testt_image_fd_gets_set`: tests that after an open, image_fd is no longer -1
+- `test_image_open`: tests that the image opens and updates image_fd
+    - `image_open`: opens a file, sets image_fd to the return of open, returns image_fd so it can be tested
+- `test_image_close`: tests that the image is closed correctly
+    - `image_close`: closes the file, returning 0 on success
+- `test_bread`: check the blockmap against a new one to test that read works
+    - `bread`: reads from the passed block
+- `test_bwrite`: 
+    - `bwrite`:
+    - `bread`
 
 ## Notes
