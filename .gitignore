@@ -1,0 +1,6 @@
+block.o
+image.o
+libvvsfs.a
+sample.txt
+testfs.o
+testfs

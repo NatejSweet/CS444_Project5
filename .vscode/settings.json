@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "block.h": "c",
+        "image.h": "c",
+        "ctest.h": "c"
+    }
+}
